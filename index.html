@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Basics Practice - Day 06</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.internal-example { color: darkgreen; }
+</style>
+</head>
+<body>
+<header id="home">
+<h1>CSS Basics Practice</h1>
+<p>Day 06 - Learning traditional CSS styling</p>
+<nav>
+<a href="#about">About</a>
+<a href="#selectors">Selectors</a>
+<a href="#text">Text</a>
+<a href="#design">Design</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section id="about" class="section-box">
+<h2>About This Page</h2>
+<p>This page shows the CSS properties I practiced during my internship.</p>
+<p style="color: brown;">This paragraph uses inline CSS.</p>
+<p class="internal-example">This paragraph uses internal CSS from the style tag.</p>
+<p class="external-example">This paragraph uses external CSS from style.css.</p>
+<p class="inherit-example">This paragraph gets its font from the body element.</p>
+</section>
+<section id="selectors" class="section-box">
+<h2>CSS Selectors</h2>
+<div class="selector-demo">
+<p>This paragraph is inside the selector demo.</p>
+<article>
+<p>This paragraph is nested inside an article.</p>
+</article>
+<p class="special">This paragraph has a special class.</p>
+<p>This paragraph follows the special paragraph.</p>
+<p>This is another following paragraph.</p>
+</div>
+<input type="text" placeholder="Attribute selector example" aria-label="Selector practice">
+<p class="cascade-example" id="priority-text">This text demonstrates specificity and important rules.</p>
+</section>
+<section id="text" class="section-box">
+<h2>Text and Fonts</h2>
+<p class="text-demo">CSS helps us change how text looks on a web page. We can control alignment, spacing, decoration and letter styles.</p>
+<p class="indent-demo">This paragraph has its first line indented. It also shows word spacing and line height. These values make text easier to read.</p>
+<p class="shadow-text">Text shadow example</p>
+<p class="caps-text">this line uses text transformation and small caps.</p>
+<p class="nowrap-demo">This is a very long sentence to demonstrate white-space and text-overflow in a fixed width box.</p>
+<p class="font-short">This paragraph uses the font shorthand property.</p>
+<p class="custom-font">This paragraph uses a font-face rule with a local font fallback.</p>
+</section>
+<section id="design" class="section-box">
+<h2>Colors, Backgrounds and Borders</h2>
+<div class="color-row">
+<div class="color-box named">Named color</div>
+<div class="color-box hex">Hex color</div>
+<div class="color-box rgb">RGB color</div>
+<div class="color-box rgba">RGBA color</div>
+<div class="color-box hsl">HSL color</div>
+<div class="color-box hsla">HSLA color</div>
+</div>
+<div class="background-demo">Repeating background image</div>
+<div class="fixed-background">Background shorthand and attachment</div>
+<div class="gradient-demo">Linear gradient</div>
+<div class="radial-demo">Radial gradient</div>
+<div class="border-demo">Border, radius, outline and shadow</div>
+<h3>CSS Units</h3>
+<div class="unit-parent"><div class="percent-box">70% width</div></div>
+<p class="em-demo">This uses em.</p>
+<p class="rem-demo">This uses rem.</p>
+<div class="viewport-demo">This box uses vw, vh, vmin and vmax.</div>
+<h3>Lists and Links</h3>
+<ul class="course-list">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
+<ol class="number-list">
+<li>Learn selectors</li>
+<li>Practice properties</li>
+<li>Test in browser</li>
+</ol>
+<a class="practice-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener noreferrer">Read CSS documentation</a>
+<p class="faded-text">This sentence uses opacity.</p>
+</section>
+<section id="contact" class="section-box">
+<h2>Contact</h2>
+<p>If you want to learn more, visit the CSS documentation above.</p>
+<a href="#home">Back to top</a>
+</section>
+</main>
+<footer>
+<p>Bloomrix Internship - CSS Day 06</p>
+</footer>
+</body>
+</html>
